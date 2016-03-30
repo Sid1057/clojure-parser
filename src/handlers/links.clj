@@ -8,4 +8,5 @@
 
 (defn link-handler
   [sentence-with-data]
-  ())
+  (println "Sentence:" (:sentence sentence-with-data))
+  (println "make something with links" (:link (:data-matches sentence-with-data)) "\n"))
