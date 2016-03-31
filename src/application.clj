@@ -24,12 +24,7 @@
   github.com/Sid1057. Today is friday, 25.03.2015 14:33. $1 > 30 rubles. My favorite programming book is 
   The Art of Unix Programming by Eric S. Raymond. Test. Test...")
 
-;(println (str teststr "\n\n"))
 (def parsed-text (map-parser teststr))
-
-; (doseq [type regexp-by-typekey]
-;     (println (not-empty (get (:data-matches (first parsed-text)) (first type))))
-;     (println (first type)))
 
 (doseq [i parsed-text]
   (route i))
