@@ -1,9 +1,8 @@
 # clojure-parser
 Library to produce an informative data from some text.
 
-Usage:
-  (Just a simple test)
-  Do:
-    Lein compile
-    Lein repl
-    
+Usage(just a simple example of demo version):
+``` sh
+  lein compile
+  lein repl
+```
