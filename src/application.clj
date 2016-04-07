@@ -19,14 +19,14 @@
        "\nEnd of record\n\n"))
 
 ;; Application test
-(def teststr
-  "Hello. My name is Ivan. And I'm a student of SPbPU. My phone is 89111801882, email is ivanov.dale@gmail.com and git-hub profile is 
-  github.com/Sid1057. Today is friday, 25.03.2015 14:33. $1 > 30 rubles. My favorite programming book is 
-  The Art of Unix Programming by Eric S. Raymond. Test. Test...")
+; (def teststr
+;   "Hello. My name is Ivan. And I'm a student of SPbPU. My phone is 89111801882, email is ivanov.dale@gmail.com and git-hub profile is 
+;   github.com/Sid1057. Today is friday, 25.03.2015 14:33. $1 > 30 rubles. My favorite programming book is 
+;   The Art of Unix Programming by Eric S. Raymond. Test. Test...")
 
-(println "Test string:\n" teststr)
+; (println "Test string:\n" teststr)
 
-(def parsed-text (map-parser teststr))
+(def parsed-text (map-parser (slurp "input.txt")))
 
 (doseq [i parsed-text]
   (route i))
