@@ -23,7 +23,7 @@ Library to produce an informative data from some text.
  - Remind *message* *time and maybe date*
  - Phone-country *phone number*
 
- [usage][Commands descriptions]
+[More about commands][Commands descriptions]
 
 ###Usage(just a simple example of demo version):
 #####input.txt
@@ -47,4 +47,4 @@ Library to produce an informative data from some text.
 
 ###License and copyright
 
-[commands descriptions]: <http://www.github.com/Sid1057/clojure-parser/doc/commands-list.md>
+[commands descriptions]: <http://www.github.com/Sid1057/clojure-parser/blob/doc/commands-list.md>
