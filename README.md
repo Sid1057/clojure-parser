@@ -47,4 +47,4 @@ Library to produce an informative data from some text.
 
 ###License and copyright
 
-[commands descriptions]: <http://www.github.com/Sid1057/clojure-parser/blob/doc/commands-list.md>
+[commands descriptions]: <http://www.github.com/Sid1057/clojure-parser/blob/master/doc/commands-list.md>
