@@ -46,5 +46,7 @@ Library to produce an informative data from some text.
 ![example's image alt](https://github.com/Sid1057/clojure-parser/raw/master/doc/cmd-screenshot.jpg)
 
 ###License and copyright
+[GPLv3]
 
+[GPLv3]: <http://www.github.com/Sid1057/clojure-parser/blob/master/LICENSE.md>
 [commands descriptions]: <http://www.github.com/Sid1057/clojure-parser/blob/master/doc/commands-list.md>
