@@ -1,6 +1,10 @@
 # clojure-parser
 Library to produce an informative data from some text.
 
+###Description
+
+###Note!
+
 ###Supported data types
  - Links
  - Dates
@@ -9,8 +13,18 @@ Library to produce an informative data from some text.
  - Phone-numbers
  - Proper names
 
+###Commands:
+#####Supported commands
+ 
+#####In the pipeline
+ - Check *links*
+ - Send-mail *message* to *email*
+ - Wikipedia *Proper name*
+ - Remind *message* *time and maybe date*
+ - Phone-country *phone number*
+
 ###Usage(just a simple example of demo version):
-####input.txt
+#####input.txt
 *Text for parsing*
 
 #####Console:
@@ -27,4 +41,7 @@ Hello. My name is Ivan. And I'm a student of SPbPU. My phone is 89111801882, ema
 
 Check www.google.com
 ```
+#####Result:
 ![example's image alt](https://github.com/Sid1057/clojure-parser/raw/master/doc/cmd-screenshot.jpg)
+
+###License and copyright
