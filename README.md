@@ -13,9 +13,9 @@ Library to produce an informative data from some text.
 
 ###Commands:
 #####Supported commands:
+ - Check *links*
  
 #####In the pipeline:
- - Check *links*
  - Send-mail *message* to *email*
  - Wikipedia *Proper name*
  - Remind *message* *time and maybe date*

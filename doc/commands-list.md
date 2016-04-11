@@ -9,5 +9,5 @@
 input:
 Check www.google.com www.googge.abv http://github.com/Sid1057/clojure-parser
 output:
-www.googge.abv is not avalaible
+This is not avalaible links: www.googge
 ```

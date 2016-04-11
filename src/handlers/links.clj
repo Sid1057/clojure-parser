@@ -24,7 +24,7 @@
            link)
       (filter #(nil? (get-content-from-link %)))
       (clojure.string/join " ")
-      (println "Is not avalaible:")))
+      (println "This is not avalaible links:")))
 
 (defn link-handler
   ([sentence-with-data]
