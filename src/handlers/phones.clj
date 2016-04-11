@@ -1,5 +1,9 @@
 (ns handlers.phones)
 
+(defn phone-country
+	[sentence-with-data]
+	())
+
 (defn phone-handler
   [sentence-with-data]
   (println "Sentence:" (:sentence sentence-with-data))

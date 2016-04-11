@@ -1,5 +1,9 @@
 (ns handlers.dates)
 
+(defn remind
+	[sentence-with-data]
+	())
+
 (defn date-handler
   [sentence-with-data]
   (println "Sentence:" (:sentence sentence-with-data))

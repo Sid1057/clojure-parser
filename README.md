@@ -3,8 +3,6 @@ Library to produce an informative data from some text.
 
 ###Description
 
-###Note!
-
 ###Supported data types:
  - Links
  - Dates

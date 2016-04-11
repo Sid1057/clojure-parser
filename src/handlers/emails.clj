@@ -1,5 +1,8 @@
-(ns handlers.emails
-  (:use parser-module))
+(ns handlers.emails)
+
+(defn send-mail
+	[sentence-with-data]
+	())
 
 (defn email-handler
   [sentence-with-data]

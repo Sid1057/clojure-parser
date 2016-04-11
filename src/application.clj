@@ -25,5 +25,4 @@
 
 (doseq [i parsed-text]
   (route i))
-
 ;;exit
