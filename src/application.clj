@@ -19,10 +19,12 @@
        "\nEnd of record\n\n"))
 
 ;; Application test
-(println "Input.txt:" (slurp "input.txt"))
+(defn main
+  []
+  (println "Input.txt:" (slurp "input.txt") "\n")
 
-(def parsed-text (map-parser (slurp "input.txt")))
+  (def parsed-text (map-parser (slurp "input.txt")))
 
-(doseq [i parsed-text]
-  (route i))
+  (doseq [i parsed-text]
+    (route i)))
 ;;exit

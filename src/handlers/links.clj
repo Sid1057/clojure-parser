@@ -1,5 +1,5 @@
 (ns handlers.links
-  (:use [clojure.string :only (join)]))
+  (:require [clojure.string :as string]))
 
 (defn get-content-from-link
   "Try to get content from web page. Return link if link is right. 
@@ -10,9 +10,17 @@
 
 (defn wikipedia
   "Return content from wikipedia"
-  [link]
-  (try (if (slurp link) link)
-       (catch Exception e (empty nil))))
+  [sentence-with-data]
+  (try (string/replace 
+          (->>(:data-matches sentence-with-data)
+              (:proper-name)
+              (first)
+              (str "https://www.wikipedia.org/wiki/")
+              (slurp)
+              (re-find #"\<p\>.+\</p\>.*"))
+          #"(\<(/?[^\>]+)\>)" 
+          "")
+       (catch Exception e (println e))))
 
 (defn link-check
   "Try to get content from links in sentence-with-data. 
@@ -22,13 +30,15 @@
   [sentence-with-data]
   (->>(for [link (:link (:data-matches sentence-with-data))]
            link)
+      (map #(if (re-find #"https?://" %) % (str "https://" %)) )
       (filter #(nil? (get-content-from-link %)))
-      (clojure.string/join " ")
-      (println "This is not avalaible links:")))
+      (string/join " ")
+      (str "This is not avalaible links: ")))
 
 (defn link-handler
   ([sentence-with-data]
-  	(println "Sentence:" (:sentence sentence-with-data))
-  	(println "make something with links" (:link (:data-matches sentence-with-data)) "\n"))
-  ([sentence-with-data command]
-  	()))
+  	(str "Sentence:" 
+         (:sentence sentence-with-data)
+  	     "make something with links" 
+         (:link (:data-matches sentence-with-data)) 
+         "\n")))

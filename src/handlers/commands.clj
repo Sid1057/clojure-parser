@@ -22,11 +22,11 @@
   (if (->>(:data-matches sentence-with-data)
           (:command)
           (not-empty)) ;then
-      ((->>(:data-matches sentence-with-data)
-           (:command)
-           (first)
-           (keyword)
-           (get commands-dict)) sentence-with-data )))
+      (println ((->>(:data-matches sentence-with-data)
+                    (:command)
+                    (first)
+                    (keyword)
+                    (get commands-dict)) sentence-with-data ))))
 
 (def handlers {
   :link #(links/link-handler %)

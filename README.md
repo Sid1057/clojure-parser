@@ -14,10 +14,10 @@ Library to produce an informative data from some text.
 ###Commands:
 #####Supported commands:
  - Check *links*
+ - Wikipedia *Proper name*
  
 #####In the pipeline:
  - Send-mail *message* to *email*
- - Wikipedia *Proper name*
  - Remind *message* *time and maybe date*
  - Phone-country *phone number*
 
@@ -32,6 +32,10 @@ Library to produce an informative data from some text.
   lein deps
   lein compile
   lein repl
+```
+#####REPL:
+``` repl
+  (main)
 ```
 
 ###Example

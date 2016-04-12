@@ -1,6 +1,5 @@
 (ns type-data-records
-  (:use [handlers.commands]
-        [clojure.string :only (join)]))
+  (:use [handlers.commands]))
 
 (def commands-dict-regexp
   (re-pattern (str "(" 
@@ -11,7 +10,7 @@
 
 (def regexp-by-typekey 
   (array-map
-    :link #"(https?://)?(www\.)?(\w|\d|-|\.)+\.(com|org|ru|uk|google)((/|\\)(\w|\d|%|=|-|\?|_|/|\.)*)?"
+    :link #"(https?://)?(www\.)?(\w|\d|-|\.)+\.\w{2,8}[^\.]((/|\\)(\w|\d|%|=|-|\?|_|/|\.)*)?"
     :phone-number #"(\+?(\d(\s|-|\(|\))?){6,11})";\d+(\s|-)?(\d|\s| |-|\(|\)){5,24})"
     :proper-name #"(([A-Z]\w{3,} ?)+)"
     :date #"((((0|1|2)?\d)|(30|31))(\.|\\|/))(0?([1-9])|(1[012]))((\.|\\|/)([1-9]\d{0,3}))?"
