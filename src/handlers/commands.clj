@@ -6,7 +6,8 @@
     [handlers.dates :as dates]
     [handlers.times :as times]
     [handlers.emails :as emails]
-    [handlers.cash :as cash]))
+    [handlers.cash :as cash])
+  (:require clojure.string))
 
 (def commands-dict{
   :check #(links/link-check %)
@@ -25,6 +26,7 @@
       (println ((->>(:data-matches sentence-with-data)
                     (:command)
                     (first)
+                    (clojure.string/lower-case)
                     (keyword)
                     (get commands-dict)) sentence-with-data ))))
 

@@ -1,11 +1,21 @@
 (ns type-data-records
-  (:use [handlers.commands]))
+  (:use [handlers.commands])
+  (:require [clojure.string]))
+
+(defn every-case-regexp
+  [word]
+  (re-pattern (str "(" 
+                   (first word) 
+                   "|" 
+                   (clojure.string/upper-case (first word)) 
+                   ")"
+                   (clojure.string/join "" (map str (next word))))))
 
 (def commands-dict-regexp
   (re-pattern (str "(" 
                     (clojure.string/join 
                       "|" 
-                      (map name (keys commands-dict))) 
+                      (map #(every-case-regexp (name %)) (keys commands-dict))) 
                     ")")))
 
 (def regexp-by-typekey 

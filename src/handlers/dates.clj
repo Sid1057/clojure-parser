@@ -1,8 +1,8 @@
 (ns handlers.dates)
 
 (defn remind
-	[sentence-with-data]
-	())
+  [sentence-with-data]
+  ())
 
 (defn date-handler
   [sentence-with-data]

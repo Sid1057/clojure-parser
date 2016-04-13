@@ -1,8 +1,8 @@
 (ns handlers.phones)
 
 (defn phone-country
-	[sentence-with-data]
-	())
+  [sentence-with-data]
+  ())
 
 (defn phone-handler
   [sentence-with-data]
