@@ -1,6 +1,6 @@
-  (ns router
-  (:use [type-data-records]
-        [handlers.commands]))
+(ns router
+(:use [type-data-records]
+      [handlers.commands]))
 
 (defn route
   [sentence-with-data]
