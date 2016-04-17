@@ -29,16 +29,16 @@
   [words]
   (apply ->data-matches 
           (for [type regexp-types]             
-            (filter #(not= nil %) (map #(get-type-from-string % type) words)))))
+            (filter #(not= nil %) (pmap #(get-type-from-string % type) words)))))
 
 (defn map-parser
   [content]
   (->> (return content)
        (split-by-sentences)
-       (map split-by-words)
+       (pmap split-by-words)
        (into [])
        (filter has-any-info?) 
-       (map #(->sentence-with-data % (construct-data-matches %)))))
+       (pmap #(->sentence-with-data % (construct-data-matches %)))))
 
 (defn link-check
   "Try to get content from web page. Return link if link is right. Return nil if link is wrong."

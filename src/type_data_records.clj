@@ -9,18 +9,18 @@
                    "|" 
                    (clojure.string/upper-case (first word)) 
                    ")"
-                   (clojure.string/join "" (map str (next word))))))
+                   (clojure.string/join "" (pmap str (next word))))))
 
 (def commands-dict-regexp
   (re-pattern (str "(" 
                     (clojure.string/join 
                       "|" 
-                      (map #(every-case-regexp (name %)) (keys commands-dict))) 
+                      (pmap #(every-case-regexp (name %)) (keys commands-dict))) 
                     ")")))
 
 (def regexp-by-typekey 
   (array-map
-    :link #"(https?://)?(www\.)?(\w|\d|-|\.)+\.\w{2,8}[^\.]((/|\\)(\w|\d|%|=|-|\?|_|/|\.)*)?"
+    :link #"(https?://)?(www\.)?(\w|\d|-|\.)+\.\w{2,8}((/|\\)(\w|\d|%|=|-|\?|_|/|\.)*)?"
     :phone-number #"(\+?(\d(\s|-|\(|\))?){6,11})";\d+(\s|-)?(\d|\s| |-|\(|\)){5,24})"
     :proper-name #"(([A-Z]\w{3,} ?)+)"
     :date #"((((0|1|2)?\d)|(30|31))(\.|\\|/))(0?([1-9])|(1[012]))((\.|\\|/)([1-9]\d{0,3}))?"
@@ -30,7 +30,7 @@
     :command commands-dict-regexp))
 
 (def regexp-types
-  (into [] (for [regexp (keys regexp-by-typekey)]
+  (doall (for [regexp (keys regexp-by-typekey)]
              regexp)))
 
 (defrecord sentence-with-data [sentence data-matches])

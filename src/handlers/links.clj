@@ -28,12 +28,14 @@
    Else return message:
    *link* is not avalaible."
   [sentence-with-data]
-  (->>(for [link (:link (:data-matches sentence-with-data))]
-           link)
-      (map #(if (re-find #"https?://" %) % (str "https://" %)) )
-      (filter #(nil? (get-content-from-link %)))
-      (string/join " ")
-      (str "This is not avalaible links: ")))
+  (let [unvalaible-links (->>(for [link (:link (:data-matches sentence-with-data))]
+                               link)
+                             (map #(if (re-find #"https?://" %) % (str "https://" %)) )
+                             (filter #(nil? (get-content-from-link %)))
+                             (string/join " "))]
+      (if (empty? unvalaible-links)
+        (str "All links are avalaible.")
+        (str "This is not avalaible links: " unvalaible-links))))
 
 (defn link-handler
   ([sentence-with-data]

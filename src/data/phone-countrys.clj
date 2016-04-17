@@ -75,108 +75,108 @@
 :962 Jordan	
 :964 Iraq	
 :98	Iran	
-:353	Ireland	
-:354	Iceland	
+:353 Ireland	
+:354 Iceland	
 :34	Spain	
 :39	Italy	
-:967	Yemen	
-:238-Верде	Cape Verde	
-:7	Kazakhstan	
-:1345 острова	Cayman Islands	
-:855	Cambodia	
-:237	Cameroon	
-:1	Canada	
-:974	Qatar	
-:254	Kenya	
-:357	Cyprus	
-:686	Kiribati	
-:86	China	
-:1 острова	Cocos (Keeling) Islands	
-:57	Colombia	
-:269	Comoros	
-:242	Republic of the Congo	
-:381	Kosovo	
-:506-Рика	Costa Rica	
-:225 д’Ивуар	Cote d’Ivoire	
+:967 Yemen	
+:238 Cape Verde	
+:7 Kazakhstan	
+:1345 Cayman Islands	
+:855 Cambodia	
+:237 Cameroon	
+:1 Canada	
+:974 Qatar	
+:254 Kenya	
+:357 Cyprus	
+:686 Kiribati	
+:86 China	
+:1 Cocos (Keeling) Islands	
+:57 Colombia	
+:269 Comoros	
+:242 Republic of the Congo	
+:381 Kosovo	
+:506 Costa Rica	
+:225 Cote d’Ivoire	
 :53	Cuba	
-:965	Kuwait	
-:856	Laos	
-:371	Latvia	
-:266	Lesotho	
-:231	Liberia	
-:961	Lebanon	
-:218	Libya	
-:370	Lithuania	
-:423	Liechtenstein	
-:352	Luxembourg	
-:230	Mauritius	
-:222	Mauritania	
-:261	Madagascar	
-:1	Mayotte	
-:853	Macau	
-:265	Malawi	
-:60	Malaysia	
-:223	Mali	
-:1 Тихоокеанские отдаленные острова США	United States Pacific Island Wildlife Refuges	
-:960	Maldives	
-:356	Malta	
-:212	Morocco	
-:596	Martinique	
-:692 острова	Marshall Islands	
+:965 Kuwait	
+:856 Laos	
+:371 Latvia	
+:266 Lesotho	
+:231 Liberia	
+:961 Lebanon	
+:218 Libya	
+:370 Lithuania	
+:423 Liechtenstein	
+:352 Luxembourg	
+:230 Mauritius	
+:222 Mauritania	
+:261 Madagascar	
+:1 Mayotte	
+:853 Macau	
+:265 Malawi	
+:60 Malaysia	
+:223 Mali	
+:1 United States Pacific Island Wildlife Refuges	
+:960 Maldives	
+:356 Malta	
+:212 Morocco	
+:596 Martinique	
+:692 Marshall Islands	
 :52	Mexico	
-:691	Micronesia, Federated States of	
-:258	Mozambique	
+:691 Micronesia, Federated States of	
+:258 Mozambique	
 :37	Moldavia	
-:377	Monaco	
-:976	Mongolia	
-:1664	Montserrat	
-:95	Burma	
-:264	Namibia	
-:674	Nauru	
-:977	Nepal	
-:227	Niger	
-:234	Nigeria	
-:1 Антилы	Netherlands Antilles	
-:505	Nicaragua	
-:683	Niue	
-:64 Зеландия	New Zealand	
-:687 Каледония	New Caledonia	
-:47	Norway	
-:971 Арабские Эмираты	United Arab Emirates	
-:968	Oman	
-:1 Буве	Bouvet Island	
-:1 Клиппертон	Clipperton Island	
-:1 Мэн	Isle of Man	
-:672 Норфолк	Norfolk Island	
-:1 Рождества	Christmas Island	
-:1 Святого Мартина	Saint Martin	
-:1 Херд и острова Макдональд	Heard Island and McDonald Islands	
-:682 Кука	Cook Islands	
-:1649 Тёркс и Кайкос	Turks and Caicos Islands	
-:92	Pakistan	
-:680	Palau	
-:507	Panama	
-:675-Новая Гвинея	Papua New Guinea	
-:595	Paraguay	
+:377 Monaco	
+:976 Mongolia	
+:1664 Montserrat	
+:95 Burma	
+:264 Namibia	
+:674 Nauru	
+:977 Nepal	
+:227 Niger	
+:234 Nigeria	
+:1 Netherlands Antilles	
+:505 Nicaragua	
+:683 Niue	
+:64 New Zealand	
+:687 New Caledonia	
+:47 Norway	
+:971 United Arab Emirates	
+:968 Oman	
+:1 Bouvet Island	
+:1 Clipperton Island	
+:1 Isle of Man	
+:672 Norfolk Island	
+:1 Christmas Island	
+:1 Saint Martin	
+:1  Heard Island and McDonald Islands	
+:682 Cook Islands	
+:1649 Turks and Caicos Islands	
+:92 Pakistan	
+:680 Palau	
+:507 Panama	
+:675 Papua New Guinea	
+:595 Paraguay	
 :51	Peru	
 :1	Pitcairn	
 :48	Poland	
-:351	Portugal	
-:1787-Рико	Puerto Rico	
-:389 Македония	Macedonia	
-:262	Reunion	
-:7	Russia	
-:250	Rwanda	
-:40	Romania	
-:685	Samoa	
-:378-Марино	San Marino	
-:239-Томе и Принсипи	Sao Tome and Principe	
-:966 Аравия	Saudi Arabia	
-:268	Swaziland	
-:1 Елена	Saint Helena	
-:850 Корея	Korea, North	
-:1670 Марианские острова	Northern Mariana Islands	
-:248	Seychelles	
+:351 Portugal	
+:1787 Puerto Rico	
+:389 Macedonia	
+:262 Reunion	
+:7 Russia	
+:250 Rwanda	
+:40 Romania	
+:685 Samoa	
+:378 San Marino	
+:239 Sao Tome and Principe	
+:966 Saudi Arabia	
+:268 Swaziland	
+:1 Saint Helena	
+:850 Korea, North	
+:1670 Northern Mariana Islands	
+:248 Seychelles	
 :1-Бартельми	Saint Barthélemy	
 :508-Пьер и Микелон	Saint Pierre and Miquelon	
 :221	Senegal	

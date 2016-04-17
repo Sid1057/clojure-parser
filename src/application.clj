@@ -18,6 +18,11 @@
        (format-data-matches (:data-matches info))
        "\nEnd of record\n\n"))
 
+(defn parse-stdin
+  []
+  (doseq [data (map-parser (read-line))]
+    (route data)))
+
 ;; Application test
 (defn main
   []
@@ -26,5 +31,7 @@
   (def parsed-text (map-parser (slurp "input.txt")))
 
   (doseq [i parsed-text]
-    (route i)))
+    (route i))
+)
+;  (parse-stdin))
 ;;exit
