@@ -31,7 +31,7 @@ Library to produce an informative data from some text.
 ```
 #####REPL:
 ``` repl
-  (parse string)
+  (parse *string*)
 ```
 
 ###Example
