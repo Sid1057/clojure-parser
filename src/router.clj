@@ -1,9 +1,9 @@
 (ns router
-(:use [type-data-records]
-      [handlers.commands]))
+(:use [type-data-records :as structs]
+      [handlers.commands :as commands]))
 
 (defn route
   [sentence-with-data]
-  (doseq [type regexp-by-typekey]
+  (doseq [type structs/regexp-by-typekey]
     (if (not-empty (get (:data-matches sentence-with-data) (key type))) 
-        ((get handlers (key type)) sentence-with-data))))
+        ((get commands/handlers (key type)) sentence-with-data))))

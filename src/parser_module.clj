@@ -1,7 +1,7 @@
 ;;parser
 (ns parser-module
   (:use [clojure.set]
-        [type-data-records]))
+        [type-data-records :as structs]))
 
 (defn return [x] (if true x))
 
@@ -15,21 +15,21 @@
 
 (defn has-some-type-info?
   [words type]
-  (some #(re-find (regexp-by-typekey type) %) words))
+  (some #(re-find (structs/regexp-by-typekey type) %) words))
 
 (defn has-any-info?
   [words]
-  (some #(has-some-type-info? words %) regexp-types))
+  (some #(has-some-type-info? words %) structs/regexp-types))
 
 (defn get-type-from-string
   [word type]
-  (first (re-find (regexp-by-typekey type) word)))
+  (first (re-find (structs/regexp-by-typekey type) word)))
 
 (defn construct-data-matches
   [words]
-  (apply ->data-matches 
-          (for [type regexp-types]             
-            (filter #(not= nil %) (pmap #(get-type-from-string % type) words)))))
+  (apply structs/->data-matches 
+           (for [type structs/regexp-types]             
+             (filter #(not= nil %) (pmap #(get-type-from-string % type) words)))))
 
 (defn map-parser
   [content]
@@ -39,9 +39,3 @@
        (into [])
        (filter has-any-info?) 
        (pmap #(->sentence-with-data % (construct-data-matches %)))))
-
-(defn link-check
-  "Try to get content from web page. Return link if link is right. Return nil if link is wrong."
-  [link]
-  (try (if (slurp link) link)
-       (catch Exception e (empty nil))))

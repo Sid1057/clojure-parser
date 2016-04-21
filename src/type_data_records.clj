@@ -1,5 +1,5 @@
 (ns type-data-records
-  (:use [handlers.commands])
+  (:use [handlers.commands :as commands])
   (:require [clojure.string]))
 
 (defn every-case-regexp
@@ -15,7 +15,7 @@
   (re-pattern (str "(" 
                     (clojure.string/join 
                       "|" 
-                      (pmap #(every-case-regexp (name %)) (keys commands-dict))) 
+                      (pmap #(every-case-regexp (name %)) (keys commands/commands-dict))) 
                     ")")))
 
 (def regexp-by-typekey 
