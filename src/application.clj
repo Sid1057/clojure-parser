@@ -17,7 +17,7 @@
        (format-data-matches (:data-matches info))
        "\nEnd of record\n\n"))
 
-(defn parse-stdin
+(defn parse
   ([]
   (doseq [data (parser/map-parser (read-line))]
     (router/route data)))
